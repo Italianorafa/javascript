@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paises</title>
+
+    <style>
+        input#verifica{
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <p>Onde voce nasceu?</p><input type="text" name="pais" id="pais">
+    <p>Onde voce mora?</p><input type="text" name="morada" id="morada"><br>
+    <input type="button" value="Verificar" id="verifica" onclick="paises()">
+    <div id="res">
+
+    </div>
+    <script>
+        function paises(){
+        var nasceu = document.getElementById('pais');
+        var mora = document.getElementById('morada');
+        var res = document.getElementById('res');
+        if(nasceu.value == mora.value){
+            res.innerHTML += '<p>Voce näo é estrangeiro no seu país de morada</p>';
+        }
+        else{
+            res.innerHTML += "<p>Voce é estrangeiro no seu país de morada</p>";
+        }
+    }
+    </script>
+</body>
+</html>
