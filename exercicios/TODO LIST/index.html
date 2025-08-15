@@ -12,33 +12,33 @@
         <h1>TO-DO List</h1>
     </header>
     <main>
-        <div id="add" onclick="addChore()">
-            <input type="button" value="Adicionar Tarefa" id="botao">
+        <input type="button" value="Adicionar Tarefa" id="add">
+        <div id="hidden">
+            <div class="conteudo-pop">
+                <h2>Adicionar nova tarefa</h2>
+                <input type="text" id="newtask" placeholder="Digite a nova tarefa" autofocus="on">
+                <div class="buttons">
+                    <button id="confirmar">Adicionar</button>
+                    <button id="fechar">Fechar</button>
+                </div>
+            </div>
         </div>
-        <div id="filter">
 
+        <div id="filter">
+            
+            <button id="concluidas">Concluidas</button>
+            <button id="progresso">Em progresso</button>
+            <button id="todas">Todas</button>
+             
         </div>
         <div id="pesquisa">
             <span class="material-symbols-outlined">search</span>
-            <input type="text" name="search" id="search" size="10">
+            <input type="text" name="search" id="search">
         </div>
         <div id="list">
-            <input type="checkbox" name="teste" id="teste">
-            <input type="checkbox" name="teste" id="teste">
-            <input type="checkbox" name="teste" id="teste">
-            <input type="checkbox" name="teste" id="teste">
-            <input type="checkbox" name="teste" id="teste">
-            <input type="checkbox" name="teste" id="teste">
-            <input type="checkbox" name="teste" id="teste">
-            <input type="checkbox" name="teste" id="teste">
-            <input type="checkbox" name="teste" id="teste">
-            <input type="checkbox" name="teste" id="teste">
 
         </div>
     </main>
-    <footer>
-
-    </footer>
     <script src="index.js"></script>
 </body>
 </html>
