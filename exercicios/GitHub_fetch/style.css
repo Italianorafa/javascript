@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+body{
+    background-image: linear-gradient(to bottom right, #BB23AC, #6700E6);
+    width: 100vw;
+    height: 100vh;
+}
+header{
+    text-align: center;
+}
+
+div{
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: white;
+    width: 400px;
+    min-height: 100px;
+    align-items: center;
+    margin: auto;
+    border-radius: 15px;
+}
+p{
+    margin-top: 10px;
+}
+button{
+    margin: 5px;
+}
