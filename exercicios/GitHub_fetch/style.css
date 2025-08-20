@@ -25,3 +25,9 @@ p{
 button{
     margin: 5px;
 }
+
+#resultado{
+    width: 300px;
+    text-align: center;
+
+}
