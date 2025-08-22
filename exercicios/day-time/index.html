@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=edit_document" />
+    <title>Day-Hour</title>
+</head>
+<body>
+    
+    <div class="display">
+        <div id="timezone">
+            <p id="tz"></p>
+            <button data-micromodal-trigger="modal-1" id="change"><span class="material-symbols-outlined">edit_document</span></button>
+        </div>
+        <p id="hour"></p>
+        <p id="day"></p>
+    </div>
+    <div id="modal-1" aria-hidden="true" class="modal">
+        <div tabinex="1" data-micromodal-close>
+            <div role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+                <header>
+                    <h2 id="modal-1-title">Change Timezone</h2>
+                </header>
+                <main id="modal-1-content">
+                    <label for="timezone-select">Timezone:</label>
+                    <select name="timezone-select" id="timezone-select">
+                        <option value="America/Sao_Paulo">São Paulo (Brasil)</option>
+                        <option value="America/New_York">Nova York (EUA)</option>
+                        <option value="America/Los_Angeles">Los Angeles (EUA)</option>
+                        <option value="Europe/London">Londres (Reino Unido)</option>
+                        <option value="Europe/Lisbon">Lisboa (Portugal)</option>
+                        <option value="Europe/Paris">Paris (França)</option>
+                        <option value="Asia/Tokyo">Tóquio (Japão)</option>
+                        <option value="Australia/Sydney">Sydney (Austrália)</option>
+                    </select>
+                    <button aria-label="Close modal" data-micromodal-close="modal-1" id="aplicar">Apply</button>
+                </main>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/timezone.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/utc.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/locale/pt-br"></script>
+    <script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
